@@ -1,4 +1,4 @@
-:root {
+:root {  /* Criando variaveis css para otimizar o processo */
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEE;
@@ -43,6 +43,10 @@
     text-align: center;
 }
 
+
+
+
+
 .grid-one-content {
     /*estilizando o flex */
     display: flex;
@@ -59,7 +63,12 @@
 }
 
 .grid h3 {
-    font-size: 3rem;
+    font-size: 6rem;
+    /* distanciando os textos em 30pixels */
+}
+
+.grid h3  p {
+    font-size: 4rem;
     /* distanciando os textos em 30pixels */
 }
 
@@ -77,4 +86,12 @@
 .footer {
     text-align: center;
     font-size: 1.6rem;
+}
+
+
+.img-fluid{border-radius: 20px;}
+
+
+.carousel-caption d-none d-md-block{
+color: aqua ;
 }

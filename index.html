@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/classes.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body class="main-bg">
@@ -30,7 +31,7 @@
                     <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
                     <li><a href="#grid-one">Tema</a></li>
                     <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
-                    <li><a href="#footer">work</a></li>
+                    <li><a href="#gallery">galeria</a></li>
                     <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
                 </ul>
             </nav>
@@ -92,13 +93,74 @@
                 </article>
 
             </div>
-            
-
     </section>
 
-    <footer id="footer" class="footer white-bg"> <!--Footer!-->
+    <section id="gallery" class="grid-one main-bg
+        section">
+        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators"> 
+                <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#newsCarousel" data-slide-to="1"></li>
+                <li data-target="#newsCarousel" data-slide-to="2"></li>
+                <li data-target="#newsCarousel" data-slide-to="3"></li>
+            </ol>
+        
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/undraw_security_re_a2rk.svg " alt="Notícia 1" class="d-block w-10">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Defesa Pessoal</h5>
+                        <p>A cibersegurança é importante para as pessoas e sua privacidade porque protege suas informações pessoais e evita que sejam expostas, roubadas ou usadas de maneira indevida por criminosos cibernéticos, garantindo assim sua segurança e confiança online..</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/undraw_surveillance_re_8tkl.svg" alt="Notícia 2" class="d-block w-10">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>cibersegurança para segurança empresarial</h5>
+                        <p>A cibersegurança é importante para empresas porque protege seus dados, evita interrupções nos negócios, assegura a conformidade regulatória, preserva a reputação da marca e reduz o risco financeiro, garantindo, assim, sua operação segura e bem-sucedida no ambiente digital.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/undraw_hacker_mind_-6-y85.svg" alt="Notícia 3" class="d-block w-10">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>hacking ético</h5>
+                        <p>O hacking ético é importante porque ajuda a identificar vulnerabilidades em sistemas e redes, permitindo que as organizações melhorem sua segurança cibernética, protegendo dados e evitando ataques maliciosos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/undraw_two_factor_authentication_namy.svg" alt="Notícia 4" class="d-block w-10">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Dispositivos conectados</h5>
+                        <p> a cibersegurança é essencial para garantir a funcionalidade, a privacidade e a segurança de dispositivos IoT, bem como para proteger as organizações e os usuários contra ameaças cibernéticas em constante evolução.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controles -->
+            
+
+
+
+
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer white-bg">
+        <ul class="flex justify-between items-center">
+
+            <li>&copy; 2023</li>
+            <li> Feito com bootstrap,grid e parcialmente flexblox</li>
+            <li>Fiap</li>
+        </ul> <!--Footer!-->
         <p><a rel="nofollow" target="_blank" href="#">Checkpoint-1 individual</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,15 @@
-* {
+* {     /* selecionando todos os elementos com * */
     margin: 0;
     padding: 0;
 }
 
-html {
+html {     /* cada vez q o usuario escrollar a pagina ,  scroll-behavior: smooth; sera ativado */
     font-size: 62.5%;
     scroll-behavior: smooth;
     
 }
 
-body {
+body {   /* utilizando as fontes */
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* estilizando as fontes */
 }
 
 h1 {
