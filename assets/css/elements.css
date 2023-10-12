@@ -1,18 +1,19 @@
-* {     /* selecionando todos os elementos com * */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html {     /* cada vez q o usuario escrollar a pagina ,  scroll-behavior: smooth; sera ativado */
+html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; /* Cada vez q o usuario scrollar a pagina o comportamento sera 'Smooth'*/
 }
 
-body {   /* utilizando as fontes */
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1,
@@ -21,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif; /* estilizando as fontes */
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 { 
+h2 {
     font-size: 6rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
@@ -57,6 +58,41 @@ h6 {
     font-size: 3.5rem;
 }
 
-P{
-    margin-bottom: 5rem;
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.responsive-table {   /* Tornando a tabe;a responsiva e obrigando ela a ficar no meio da tela */
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td,
+table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color)
+}
+
+tfoot td,
+table th {
+    background: var(--light-gray-color);
 }

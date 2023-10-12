@@ -1,27 +1,30 @@
-
 .main-bg {
-    background-image: url('../images/main-bg.svg');  /* Estilizando o layout da pagina colocando uma imagem de fundo */
+    background-image: url('../images/main-bg.svg');  /* declarando o fundo de uma section uma imagem */
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
 }
 
-.white-bg {
+.white-bg {      /* Declarando um background branco */
     background: var(--white-color);
     color: var(--primary-color);
 }
 
-
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
     min-height: 100vh;
 }
 
-.menu-sapcing{
-height: 65px;
+.menu-spacing {
+    height: 65px;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
 }

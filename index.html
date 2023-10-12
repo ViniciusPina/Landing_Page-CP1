@@ -4,57 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Checkpoint-3</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet"><!--Importando fontes do google fonts-->
-    <link rel="stylesheet" href="assets/css/styles.css"><!--Dividindo o css para o codigo ficar mais visual!-->
-    <link rel="stylesheet" href="assets/css/elements.css">
+        rel="stylesheet"> <!--Imporando fontes para o site-->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">   <!--Separando os arquivos css para organizar os codigos e facilitar a leitura-->
     <link rel="stylesheet" href="assets/css/classes.css">
     <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!--Importando o Bootstrap-->
 </head>
 
-<body class="main-bg">
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button"> 
+    <label class="close-menu-label" for="close-menu" title="close menu"></label> 
     <aside class="menu white-bg">
-        <div class="main-content 
-    menu-content">
-            <h1>
-                <a id="logo" href="#">logo</a>
+        <div class="main-content menu-content"> 
+            <h1 onclick="getElementById('close-menu').checked = false;"> <!--ao usuario clicar pega o elemento pelo o iD -->
+                <a href="#home">LOGO</a>
             </h1>
+
             <nav>
-                <ul>
-                    <li><a href="#intro">intro</a></li>
-                    <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
-                    <li><a href="#title">Benefícios</a></li>
-                    <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
-                    <li><a href="#grid-one">Tema</a></li>
-                    <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
-                    <li><a href="#gallery">galeria</a></li>
-                    <!---toda vez que o usuario clicar no link, leva para o destinatario correspondente-->
+                <ul onclick="getElementById('close-menu').checked = false;"> <!--ao usuario clicar pega o elemento pelo o iD -->
+                    <li><a href="#intro">Inicio</a></li> 
+                    <li><a href="#grid-one">Relevancia do Tema</a></li>
+                    <li><a href="#gallery">gallery</a></li> <!--garelia bootstrap-->
+                    <li><a href="#grid-two">Ameaças da web</a></li>
+                    <li><a href="#pricing">Tabela</a></li>
+                    <li><a href="#contact">contato</a></li>
                 </ul>
             </nav>
         </div>
     </aside>
-    <div class="menu-sapcing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <div class="menu-spacing"></div> <!--chamando o espaco que declarei no "menu-spacing"-->
+
+    <section id="home" class="intro main-bg section"><!--Chamando a secao estilizada -->
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>a cibersegurança e seus beneficios.</h2> <!---conteudo-->
+                <h2>a cibersegurança e seus beneficios.</h2> <!--Textos -->
                 <p>A cibersegurança desempenha um papel crucial na proteção de sistemas de computador, redes e dados
                     contra ameaças cibernéticas. Aqui estão alguns dos principais benefícios da cibersegurança:.</p>
             </div>
             <div class="intro-img">
-                <img src="assets/images/undraw_hacker_mind_-6-y85.svg" alt="hacker">
+                <img src="./assets/images/undraw_hacker_mind_-6-y85.svg" alt="Logo Hacker"> <!--imagem de fundo junto com o  a imagem do tema principal-->
             </div>
         </div>
     </section>
 
-    <section id="title" class="white-bg section">
-        <div class="main-content title-content">
-            <h2>Benefícios</h2> <!---conteudo-->
+    <section id="intro" class="white-bg section"> <!--Section com background branco-->
+        <div class="main-content top3-content">
+            <h2>Benefícios</h2>
             <p>Proteção de Dados Sensíveis: A cibersegurança ajuda a proteger informações confidenciais, como dados
                 pessoais, informações financeiras e segredos comerciais, contra roubo, vazamento ou comprometimento.</p>
             <p>Prevenção de Ataques Cibernéticos: A cibersegurança é fundamental para identificar e prevenir ataques
@@ -63,22 +66,21 @@
             <p>Economia de Custos: Investir em cibersegurança pode, a longo prazo, economizar dinheiro ao evitar a perda
                 de dados, multas regulatórias, despesas com recuperação após ataques e danos à reputação.</p>
         </div>
-
     </section>
 
-    <section id="grid-one" class="grid-one main-bg
-    section">
-        <div class="grid-one-content">
-            <h2>Porque em um mundo digital devemos tomar medidas de cibersegurança?</h2> <!---conteudo-->
-            <p>Em um mundo digital, a necessidade de tomar medidas de cibersegurança é crítica devido a uma série de
-                razões fundamentais:</p>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Relevancia do tema</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+
             <div class="grid">
                 <article>
                     <h3>Crescente Dependência da Tecnologia:</h3>
                     <p>Vivemos em um mundo cada vez mais digitalizado, onde a tecnologia desempenha um papel central em
                         nossas vidas pessoais e profissionais. Depender da tecnologia digital para comunicação,
                         transações financeiras, comércio eletrônico, cuidados de saúde, entretenimento e muito mais
-                        torna a segurança cibernética essencial.</p>
+                        torna a segurança cibernética essencial</p>
                 </article>
                 <article>
                     <h3>Proteção de Dados Sensíveis</h3>
@@ -89,14 +91,13 @@
                 <article>
                     <h3>Preservação da Privacidade</h3>
                     <p>A cibersegurança também desempenha um papel na preservação da privacidade pessoal. As violações
-                        de segurança podem levar à divulgação não autorizada de informações pessoais.</p>
+                        de segurança podem levar à divulgação não autorizada de informações pessoais</p>
                 </article>
-
             </div>
+        </div>
     </section>
-
-    <section id="gallery" class="grid-one main-bg
-        section">
+    <section id="gallery" class="grid-one main-bg 
+        section"> <!--usando um carrousel com bootsrap-->
         <div id="newsCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicadores -->
             <ol class="carousel-indicators"> 
@@ -148,16 +149,161 @@
     </section>
 
 
-    <footer id="footer" class="footer white-bg">
-        <ul class="flex justify-between items-center">
 
-            <li>&copy; 2023</li>
-            <li> Feito com bootstrap,grid e parcialmente flexblox</li>
-            <li>Fiap</li>
-        </ul> <!--Footer!-->
-        <p><a rel="nofollow" target="_blank" href="#">Checkpoint-1 individual</a></p>
+
+
+
+
+
+
+
+    <section id="grid-two" class="grid-one main-bg section"> <!--Reaprovitando o fundo do backgroudn principal junto com grid-->
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Ameacas na web</h2>
+            <p class="grid-description">principais ameaças</p>
+
+            <div class="grid">
+                <article>
+                    <h3>malwares</h3>
+                    <p>Os malwares (abreviação de "software malicioso") são programas de computador desenvolvidos com a
+                        intenção de causar danos, roubar informações, perturbar o funcionamento de sistemas ou executar
+                        ações indesejadas em dispositivos ou redes de computadores sem o consentimento do usuário. Aqui
+                        estão algumas razões pelas quais os malwares são ruins:</p>
+                </article>
+                <article>
+                    <h3>Ataques de Injeção de SQL</h3>
+                    <p>Os invasores exploram vulnerabilidades em aplicativos da web para injetar código SQL malicioso e
+                        acessar ou corromper bancos de dados</p>
+                </article>
+                <article>
+                    <h3>Ameaças à Inteligência Artificial e Deep Learning</h3>
+                    <p>À medida que a IA se torna mais avançada, também há ameaças de manipulação e exploração de
+                        sistemas de IA.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section"> <!--Reaproveitando o fundo branco-->
+        <div class="main-content top3-content">
+            <h2>Avaliacao de evolucao pessoal</h2>
+            <p>Durante o processo de desenvolvimento desta landing page, deparei-me com diversos desafios e equívocos
+                que demandaram um significativo investimento de tempo e causaram considerável desconforto até serem
+                solucionados. Após inúmeras horas de pesquisa na internet e a revisão de conteúdos previamente estudados
+                em sala de aula,obtive êxito na criação da landing page</p>
+            <p>Este relatório tem como objetivo fornecer uma avaliação abrangente do website, com ênfase no design e na
+                clareza das informações apresentadas. Para essa avaliação, utilizaremos a tabela fornecida abaixo como
+                referência.</p>
+
+            <div class="responsive-table"> <!--tabela responsiva-->
+                <table>
+                    <caption>Tabela avaliativa</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Ruim</th>
+                            <th>Ok</th>
+                            <th>medio</th>
+                            <th>Bom</th>
+                            <th>Excelente</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Descumpriu as tarefas prescritas</td>
+                            <td>Compriu parcialmente as tarefas,porem com algumas falhas</td>
+                            <td>Compriu as tarefas porem poderia ter feito melhor</td>
+                            <td>Compriu todas as tarefas e requisicoes</td>
+                            <td>Cumpriu todas suas tarefas e requisicoes e demontrou um forte desenpenho</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvimento ruim</td>
+                            <td>Desenvolvimento consideravel</td>
+                            <td>Desenvolvimento bom</td>
+                            <td>Desenvolvimento Otimo</td>
+                            <td>Demonstrou Otimo desenvolvimento e qualidade no produto</td>
+                        </tr>
+                        <tr>
+                            <td>Diversos erros</td>
+                            <td>Erros consideraveis</td>
+                            <td>Alguns erros</td>
+                            <td>Poucos ou nenhum erro</td>
+                            <td>Sem erros ou complicacoes</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section"> <!--Reaproveitando o fundo do background principal-->
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Conclusao</h2>
+                <p>Em resumo, as ameaças na web estão em constante evolução e representam uma gama diversificada de
+                    riscos, desde malwares tradicionais e ataques de phishing até ameaças emergentes, como a manipulação
+                    de IA e a disseminação de desinformação. Para se proteger contra essas ameaças, é fundamental adotar
+                    boas práticas de segurança cibernética, como manter o software atualizado, usar senhas robustas,
+                    estar ciente de táticas de engenharia social e phishing, e investir em soluções de segurança
+                    confiáveis. A educação contínua sobre segurança cibernética é crucial, uma vez que as ameaças estão
+                    em constante mudança e evolução. Proteger-se na era digital exige vigilância, conhecimento e medidas
+                    proativas de segurança</p>
+            </div>
+            <div class="intro-img"> <!--Preparando um layout para o footer da pagina-->
+                <img src="./assets/images/undraw_hacker_mind_-6-y85.svg" alt="Logo de Hacker">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contate-me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">Seu Nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Segundo Nome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer white-bg">
+        <p>Feito com bootstrap,grid e parcialmente flexbox</p>
+        <p>Checkpoint-3</p>
+                
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+
+    <a class="back-to-top" href="#">➤</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script> <!--Scripts de ativacao do bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
